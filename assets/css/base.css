@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Slab:wght@300;400;600;700&display=swap");
+
+@import url("./modules/app-bar.css");
+@import url("./modules/footer.css");
+@import url("./modules/cta.css");
+@import url("./modules/cta-banner.css");
+@import url("./modules/button.css");
+@import url("./modules/pagination.css");
+
+:root {
+  --egyptian-blue: #00379c;
+  --honolulu-blue: #2f7baa;
+  --gold-metallic: #deb841;
+  --hunyadi-yellow: #de9e36;
+  --light-gray: #f9f9f9;
+
+  /* Body (desktop) */
+  --body-font-family: "Roboto Slab", serif;
+  --body-font-size: 1rem;
+  --body-font-style: normal;
+  --body-font-weight: 400;
+  --body-font-line-height: normal;
+  --body-font-variant: normal;
+  --body-font-stretch: normal;
+  --body-font: var(--body-font-style) var(--body-font-variant)
+    var(--body-font-weight) var(--body-font-stretch) var(--body-font-size) /
+    var(--body-font-line-height) var(--body-font-family);
+
+  /* Body highlight (desktop) */
+  --body-highlight-font-family: "Roboto Slab", serif;
+  --body-highlight-font-size: 1rem;
+  --body-highlight-font-style: normal;
+  --body-highlight-font-weight: 600;
+  --body-highlight-font-line-height: normal;
+  --body-highlight-font-variant: normal;
+  --body-highlight-font-stretch: normal;
+  --body-highlight-font: var(--body-highlight-font-style)
+    var(--body-highlight-font-variant) var(--body-highlight-font-weight)
+    var(--body-highlight-font-stretch) var(--body-highlight-font-size) /
+    var(--body-highlight-font-line-height) var(--body-highlight-font-family);
+
+  /* Title 2 (desktop) */
+  --title2-font-family: "Roboto Slab", serif;
+  --title2-font-size: 1.25rem;
+  --title2-font-style: normal;
+  --title2-font-weight: 400;
+  --title2-font-line-height: normal;
+  --title2-font-variant: normal;
+  --title2-font-stretch: normal;
+  --title2-font: var(--title2-font-style) var(--title2-font-variant)
+    var(--title2-font-weight) var(--title2-font-stretch) var(--title2-font-size) /
+    var(--title2-font-line-height) var(--title2-font-family);
+
+  /* Title 1 (desktop) */
+  --title1-font-family: "EB Garamond", serif;
+  --title1-font-size: 1.25rem;
+  --title1-font-style: normal;
+  --title1-font-weight: 400;
+  --title1-font-line-height: normal;
+  --title1-text-transform: uppercase;
+  --title1-font-variant: normal;
+  --title1-font-stretch: normal;
+  --title1-font: var(--title1-font-style) var(--title1-font-variant)
+    var(--title1-font-weight) var(--title1-font-stretch) var(--title1-font-size) /
+    var(--title1-font-line-height) var(--title1-font-family);
+
+  /* Header (desktop) */
+  --header-font-family: "EB Garamond", serif;
+  --header-font-size: 2rem;
+  --header-font-style: normal;
+  --header-font-weight: 400;
+  --header-font-line-height: normal;
+  --header-text-transform: uppercase;
+  --header-font-variant: normal;
+  --header-font-stretch: normal;
+  --header-font: var(--header-font-style) var(--header-font-variant)
+    var(--header-font-weight) var(--header-font-stretch) var(--header-font-size) /
+    var(--header-font-line-height) var(--header-font-family);
+
+  --body-background-color: white;
+  --body-text-color: black;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: var(--body-font);
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+}
+
+.body-highlight {
+  font: var(--body-highlight-font);
+}
+
+.titre-page {
+  font: var(--header-font);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-block: 2rem;
+}
+
+.titre-section {
+  width: 100%;
+  /* background: linear-gradient(
+    180deg,
+    var(--honolulu-blue) 80%,
+    var(--body-background-color) 100%
+  ); */
+  background-color: var(--honolulu-blue);
+  color: var(--gold-metallic);
+  font: var(--title1-font);
+  text-align: center;
+  text-transform: var(--title1-text-transform);
+  padding-block: 2rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --body-font-size: 1.25rem;
+    --body-highlight-font-size: 1.25rem;
+    --title2-font-size: 1.5rem;
+    --title1-font-size: 1.5rem;
+    --header-font-size: 4.5rem;
+  }
+}

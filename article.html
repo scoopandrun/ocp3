@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/article.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <div class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </div>
+
+      <nav class="app-bar__nav">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <header
+        class="header"
+        style="
+          background-image: url('/assets/images/article_ecran_plein_air.jpg');
+        "
+      >
+        <div class="header__overlay">
+          <h1 class="header__titre">Lorem ipsum dolor</h1>
+        </div>
+      </header>
+
+      <div class="date">
+        <div class="date__jour">3</div>
+        <div class="date__mois">août</div>
+      </div>
+
+      <section class="texte-article">
+        <p class="texte-article__paragraphe">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+          consequatur?
+        </p>
+
+        <h2 class="texte-article__sous-titre">Ut Enim ad minima denim</h2>
+
+        <p class="texte-article__paragraphe">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+          consequatur?
+        </p>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="pagination__link" title="Article précédent"
+          >&lt; Article précédent</a
+        >
+        <a href="#" class="pagination__link" title="Article suivant"
+          >Article suivant &gt;</a
+        >
+      </div>
+    </main>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+      <div class="cta-banner__text">
+        Venez découvrir des classiques du cinéma d'auteur, c'est gratuit !
+      </div>
+      <a class="cta cta-banner__button" href="inscription.html"
+        >Inscription gratuite</a
+      >
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

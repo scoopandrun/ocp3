@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiche de film - Vicky Cristina Barcelona</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/fiche-film.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <img
+        src="./assets/images/film_vicky_cristina_barcelona_2008.jpg"
+        class="film__affiche"
+        alt="Fiche film 'Vicky Cristina Barcelona'"
+      />
+
+      <section class="film__infos">
+        <div class="film__cartouche">
+          <h1 class="film__titre">Vicky Cristina Barcelona</h1>
+          <div class="film__duree">
+            <img
+              src="./assets/images/horloge.svg"
+              class="duree__horloge"
+              alt=""
+            />
+            <span class="duree__heure">1h37</span>
+          </div>
+
+          <p class="film__acteurs">
+            <span class="film__entete-ligne">Acteurs</span>
+            <span>Scarlett Johansson, Rebecca Hall, Javier Bardem</span>
+          </p>
+
+          <p class="film__realisateur">
+            <span class="film__entete-ligne">Réalisateur</span>
+            <span>Woody Allen</span>
+          </p>
+
+          <p class="film__date-sortie">
+            <span class="film__entete-ligne">Date de sortie</span>
+            <span>8 octobre 2008</span>
+          </p>
+        </div>
+
+        <section class="synopsis">
+          <h2 class="synopsis__titre">Synosis</h2>
+          <p class="synopsis__paragraphe">
+            Vicky et Cristina sont d'excellentes amies, avec des visions
+            diamétralement opposées de l'amour : la première est une femme de
+            raison, fiancée à un jeune homme respectable ; la seconde, une
+            créature d'instincts, dénuée d'inhibitions et perpétuellement à la
+            recherche de nouvelles expériences sexuelles et passionnelles.
+          </p>
+          <p class="synopsis__paragraphe">
+            Lorsque Judy et Mark, deux lointains parents de Vicky, offrent de
+            les accueillir pour l'été à Barcelone, les deux amies acceptent avec
+            joie : Vicky pour y consacrer les derniers mois de son célibat à la
+            poursuite d'un master ; Cristina pour goûter un changement de décor
+            et surmonter le traumatisme de sa dernière rupture.
+          </p>
+          <p class="synopsis__paragraphe">
+            Un soir, dans une galerie d'art, Cristina "flashe" pour le peintre
+            Juan Antonio, bel homme à la sensualité provocante. Son intérêt
+            redouble lorsque Judy lui murmure que Juan Antonio entretient une
+            relation si orageuse avec son ex-femme, Maria Elena, qu'ils ont
+            failli s'entre-tuer.
+          </p>
+          <p class="synopsis__paragraphe">
+            Plus tard, au restaurant, Juan Antonio aborde Vicky et Cristina avec
+            une proposition des plus directes : s'envoler avec lui pour Oviedo,
+            consacrer le week-end à explorer les beautés de la ville, à boire du
+            bon vin et à faire l'amour. Vicky est horrifiée ; Cristina, ravie,
+            la persuade de tenter l'aventure...
+          </p>
+        </section>
+
+        <section class="seance">
+          <h2 class="seance__titre">Séance</h2>
+          <div class="seance__date">5 août à 22h00</div>
+          <a href="inscription.html" class="cta seance__button"
+            >Inscription gratuite</a
+          >
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

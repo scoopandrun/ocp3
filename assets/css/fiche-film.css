@@ -1,0 +1,107 @@
+@import url("base.css");
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: 2rem;
+  margin-top: 1rem;
+}
+
+.film__affiche {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+}
+
+.film__cartouche {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 55, 156, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem;
+}
+
+.film__titre {
+  font: var(--title2-font);
+}
+
+.film__entete-ligne {
+  font: var(--body-highlight-font);
+}
+
+.film__entete-ligne::after {
+  content: " : ";
+}
+
+.synopsis {
+  margin-block: 2rem;
+}
+
+.synopsis__titre,
+.seance__titre {
+  font: var(--title2-font);
+  margin-bottom: 0.75rem;
+}
+
+.synopsis__paragraphe {
+  margin-block: 1rem;
+}
+
+.seance__button {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    grid-template-columns: 30% 1fr;
+    margin-inline: auto;
+    margin-top: 1rem;
+    max-width: 1200px;
+  }
+
+  .film__affiche {
+    margin: 0 0 0 auto;
+  }
+
+  .film__duree {
+    margin-bottom: 2rem;
+  }
+
+  .film__acteurs,
+  .film__realisateur,
+  .film__date-sortie {
+    margin-block: 0.5rem;
+  }
+
+  .synopsis,
+  .seance {
+    margin-left: 1.25rem;
+  }
+
+  .synopsis {
+    margin-block: 4rem;
+  }
+
+  .synopsis__titre,
+  .seance__titre {
+    font: var(--title2-font);
+    margin-bottom: 2rem;
+  }
+
+  .synopsis__paragraphe {
+    margin-block: 1.25rem;
+  }
+
+  .seance__button {
+    display: block;
+    width: fit-content;
+    margin-left: 0;
+  }
+}

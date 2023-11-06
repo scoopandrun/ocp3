@@ -1,0 +1,29 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-block: 2rem;
+}
+
+.pagination__link,
+.pagination__link:visited {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+
+.pagination__link:hover:not(.pagination__link--active) {
+  text-decoration: underline;
+}
+
+.pagination__link--active {
+  background-color: var(--honolulu-blue);
+  color: var(--gold-metallic);
+  font-weight: 600;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.3125rem;
+}

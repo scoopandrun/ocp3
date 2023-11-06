@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des séances</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/liste-seances.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item app-bar__nav-item--active"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="titre-page">Liste des séances</h1>
+
+      <section class="film">
+        <img
+          src="./assets/images/film_le_gamin_au_velo_2011.jpg"
+          class="film__affiche"
+          alt="Fiche film 'Le gamin au vélo'"
+        />
+        <div class="film__infos">
+          <div class="film__bloc-info">
+            <a
+              href="fiche-film.html"
+              class="film__titre"
+              title="Voir la fiche du film"
+              ><h2 class="film__titre">Le gamin au vélo</h2></a
+            >
+            <div class="film__duree">
+              <img
+                src="./assets/images/horloge.svg"
+                class="duree__horloge"
+                alt=""
+              />
+              <span class="duree__heure">1h27</span>
+            </div>
+            <p class="film__description">
+              Cyril, bientôt 12 ans, n'a qu'une idée en tête : retrouver son
+              père qui l'a placé provisoirement dans un foyer pour enfants. Il
+              rencontre par hasard Samantha, qui tient un salon de coiffure et
+              qui accepte de l'accueillir chez elle pendant les week-ends. Mais
+              Cyril ne voit pas encore l'amour que Samantha lui porte, cet amour
+              dont il a pourtant besoin pour apaiser sa colère ...
+            </p>
+            <p class="film__acteurs">
+              <span class="film__entete-ligne">Acteurs</span>
+              <span>Cécile de France, Thomas Doret, Jérémie Renier</span>
+            </p>
+            <p class="film__realisateur">
+              <span class="film__entete-ligne">Réalisateur</span>
+              <span>Jean-Pierre Dardenne, Luc Dardenne</span>
+            </p>
+            <p class="film__date-sortie">
+              <span class="film__entete-ligne">Date de sortie</span>
+              <span>18 mai 2011</span>
+            </p>
+            <div class="film__details">
+              <img src="./assets/images/infos.svg" class="details__i" alt="" />
+              <a
+                href="fiche-film.html"
+                class="details__texte"
+                title="Voir la fiche du film"
+                >Détails</a
+              >
+            </div>
+          </div>
+
+          <div class="film__bloc-info">
+            <div class="film__date">5 août à 18h00</div>
+            <a href="inscription.html" class="button film__button"
+              >S'inscrire</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="film">
+        <img
+          src="./assets/images/film_la_gueule_ouverte_1974.jpg"
+          class="film__affiche"
+          alt="Fiche film 'La gueule ouverte'"
+        />
+        <div class="film__infos">
+          <div class="film__bloc-info">
+            <a
+              href="fiche-film.html"
+              class="film__titre"
+              title="Voir la fiche du film"
+              ><h2 class="film__titre">La gueule ouverte</h2></a
+            >
+            <div class="film__duree">
+              <img
+                src="./assets/images/horloge.svg"
+                class="duree__horloge"
+                alt=""
+              />
+              <span class="duree__heure">1h22</span>
+            </div>
+            <p class="film__description">
+              La lente agonie d'une femme atteinte d'un cancer, assistée de son
+              mari et de son fils.
+            </p>
+            <p class="film__acteurs">
+              <span class="film__entete-ligne">Acteurs</span>
+              <span>Nathalie Baye, Philippe Léotard, Hubert Deschamps</span>
+            </p>
+            <p class="film__realisateur">
+              <span class="film__entete-ligne">Réalisateur</span>
+              <span>Maurice Pialat</span>
+            </p>
+            <p class="film__date-sortie">
+              <span class="film__entete-ligne">Date de sortie</span>
+              <span>8 mai 1974</span>
+            </p>
+            <div class="film__details">
+              <img src="./assets/images/infos.svg" class="details__i" alt="" />
+              <a
+                href="fiche-film.html"
+                class="details__texte"
+                title="Voir la fiche du film"
+                >Détails</a
+              >
+            </div>
+          </div>
+
+          <div class="film__bloc-info">
+            <div class="film__date">5 août à 20h00</div>
+            <a href="inscription.html" class="button film__button"
+              >S'inscrire</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="film">
+        <img
+          src="./assets/images/film_vicky_cristina_barcelona_2008.jpg"
+          class="film__affiche"
+          alt="Fiche film 'Vicky Cristina Barcelona'"
+        />
+        <div class="film__infos">
+          <div class="film__bloc-info">
+            <a
+              href="fiche-film.html"
+              class="film__titre"
+              title="Voir la fiche du film"
+              ><h2 class="film__titre">Vicky Cristina Barcelona</h2></a
+            >
+            <div class="film__duree">
+              <img
+                src="./assets/images/horloge.svg"
+                class="duree__horloge"
+                alt=""
+              />
+              <span class="duree__heure">1h37</span>
+            </div>
+            <p class="film__description">
+              Vicky et Cristina sont d'excellentes amies, avec des visions
+              diamétralement opposées de l'amour : la première est une femme de
+              raison, fiancée à un jeune homme respectable ; la seconde, une
+              créature d'instincts, dénuée d'inhibitions et perpétuellement à la
+              recherche de nouvelles expériences sexuelles et passionnelles.<br />
+              Lorsque Judy et Mark, deux lointains parents de Vicky, offrent de
+              les accueillir pour l'été à Barcelone, les deux amies acceptent
+              avec joie : Vicky pour y consacrer les derniers mois de son
+              célibat à la poursuite d'un master ; Cristina pour goûter un
+              changement de décor et surmonter le traumatisme de sa dernière
+              rupture.
+            </p>
+            <p class="film__acteurs">
+              <span class="film__entete-ligne">Acteurs</span>
+              <span>Scarlett Johansson, Rebecca Hall, Javier Bardem</span>
+            </p>
+            <p class="film__realisateur">
+              <span class="film__entete-ligne">Réalisateur</span>
+              <span>Woody Allen</span>
+            </p>
+            <p class="film__date-sortie">
+              <span class="film__entete-ligne">Date de sortie</span>
+              <span>8 octobre 2008</span>
+            </p>
+            <div class="film__details">
+              <img src="./assets/images/infos.svg" class="details__i" alt="" />
+              <a
+                href="fiche-film.html"
+                class="details__texte"
+                title="Voir la fiche du film"
+                >Détails</a
+              >
+            </div>
+          </div>
+
+          <div class="film__bloc-info">
+            <div class="film__date">5 août à 22h00</div>
+            <a href="inscription.html" class="button film__button"
+              >S'inscrire</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <span class="pagination__link pagination__link--active">1</span>
+        <a href="#" class="pagination__link" title="Page 2">2</a>
+        <a href="#" class="pagination__link" title="Page 3">3</a>
+        <a href="#" class="pagination__link" title="Page 4">4</a>
+        <a href="#" class="pagination__link" title="Page suivante">Suivant</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item footer__nav-item--active"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

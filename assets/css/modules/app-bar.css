@@ -1,0 +1,88 @@
+/* APP BAR */
+
+:root {
+  --app-bar-height: 5rem;
+}
+
+.app-bar {
+  height: var(--app-bar-height);
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  background: var(--egyptian-blue);
+  z-index: 1;
+}
+
+.app-bar__logo {
+  width: 7rem;
+  margin-left: 2rem;
+}
+
+.app-bar__hamburger {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+
+.app-bar__nav {
+  display: none;
+}
+
+.app-bar__menu-checkbox:checked + .app-bar {
+  grid-template-rows: var(--app-bar-height) auto;
+}
+
+.app-bar__menu-checkbox:checked + .app-bar .app-bar__nav {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+  height: calc(100vh - var(--app-bar-height));
+  background-color: var(--egyptian-blue);
+}
+
+.app-bar__nav-item,
+.app-bar__nav-item:visited,
+.app-bar__nav-item:active {
+  color: var(--hunyadi-yellow);
+  text-decoration: none;
+}
+
+.app-bar__nav-item--active,
+.app-bar__nav-item:hover,
+.app-bar__nav-item:focus {
+  text-decoration: underline var(--gold-metallic);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.188rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --app-bar-height: 7rem;
+  }
+
+  .app-bar__logo {
+    width: 11rem;
+    margin-left: 4rem;
+  }
+
+  .app-bar__hamburger {
+    display: none;
+  }
+
+  .app-bar__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 4rem;
+  }
+}

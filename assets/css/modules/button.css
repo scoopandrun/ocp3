@@ -1,0 +1,13 @@
+.button,
+.button:visited,
+.button:active {
+  font: var(--body-font);
+  color: var(--gold-metallic, #deb841);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.3125rem;
+  background: var(--honolulu-blue);
+  border: none;
+  cursor: pointer;
+}

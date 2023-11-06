@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S'inscrire pour une projection</title>
+    <link
+    rel="shortcut icon"
+    href="assets/images/favicon.webp"
+    type="image/webp"
+  />
+    <link rel="stylesheet" href="./assets/css/inscription.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item app-bar__nav-item--active" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="titre-page">Inscription</h1>
+
+      <p class="introduction">La participation au festival est gratuite et ouverte à tous.</p>
+  
+      <p class="introduction">
+        Merci de vous inscrire pour nous permettre de faciliter l'organisation.
+      </p>
+  
+      <form class="form">
+        <div class="form__input-group">
+          <label for="name">Nom</label>
+          <input type="text" class="input" id="name" required>
+        </div>
+  
+        <div class="form__input-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="input" id="email" placeholder="email@example.com" required>
+        </div>
+  
+        <div class="form__input-group form__input-group--inline">
+          <label for="people">Nombre de personnes</label>
+          <input type="number" class="input" id="people" min="1" value="1" required>
+        </div>
+  
+        <fieldset class="form__seances form__fieldset">
+          <legend class="form__legend">Séances</legend>
+  
+          <div class="form__jours">
+            <fieldset class="form__jour form__fieldset">
+              <legend class="form__legend">5 août</legend>
+    
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_1_1">
+                <label for="jour_1_1">18h00 - Le gamin au vélo</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_1_2">
+                <label for="jour_1_2">20h00 - La gueule ouverte</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_1_3">
+                <label for="jour_1_3">22h00 - Vicky Cristina Barcelona</label>
+              </div>
+            </fieldset>
+    
+            <fieldset class="form__jour form__fieldset">
+              <legend class="form__legend">6 août</legend>
+    
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_2_1">
+                <label for="jour_2_1">18h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_2_2">
+                <label for="jour_2_2">20h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_2_3">
+                <label for="jour_2_3">22h00 - Titre du film</label>
+              </div>
+            </fieldset>
+    
+            <fieldset class="form__jour form__fieldset">
+              <legend class="form__legend">7 août</legend>
+    
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_3_1">
+                <label for="jour_3_1">18h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_3_2">
+                <label for="jour_3_2">20h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_3_3">
+                <label for="jour_3_3">22h00 - Titre du film</label>
+              </div>
+            </fieldset>
+    
+            <fieldset class="form__jour form__fieldset">
+              <legend class="form__legend">8 août</legend>
+    
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_4_1">
+                <label for="jour_4_1">18h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_4_2">
+                <label for="jour_4_2">20h00 - Titre du film</label>
+              </div>
+              <div class="form__input-group form__input-group--checkbox">
+                <input type="checkbox" id="jour_4_3">
+                <label for="jour_4_3">22h00 - Titre du film</label>
+              </div>
+            </fieldset>
+          </div>
+        </fieldset>
+  
+        <div class="form__input-group">
+          <label for="remarques">Remarques</label>
+          <textarea class="textarea" id="remarques" cols="30" rows="10"></textarea>
+        </div>
+  
+          <button type="button" class="button form__submit">Valider l'inscription</button>
+        </div>
+      </form>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+        >Actualités</a
+      >
+        <a href="inscription.html" class="footer__nav-item footer__nav-item--active" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

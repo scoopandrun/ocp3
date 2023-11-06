@@ -1,0 +1,20 @@
+@import url("base.css");
+
+.section__texte {
+  text-align: center;
+  margin: 2rem;
+}
+
+.section-contact__lien-mail {
+  font: var(--body-highlight-font);
+  text-decoration: none;
+  color: var(--body-text-color);
+}
+
+@media (min-width: 768px) {
+  .section__texte {
+    max-width: 60%;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+  }
+}

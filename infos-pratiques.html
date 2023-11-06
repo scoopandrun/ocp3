@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infos pratiques</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/infos-pratiques.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item app-bar__nav-item--active"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="titre-page">Infos pratiques</h1>
+
+      <section class="section">
+        <h2 class="titre-section">Dates</h2>
+
+        <p class="section__texte">
+          Le festival aura lieu du 5 au 8 août, chaque jour, de 18h à minuit.
+        </p>
+      </section>
+
+      <section class="section section-lieu">
+        <h2 class="titre-section">Lieu</h2>
+
+        <div class="section-lieu__infos">
+          <div class="section-lieu__texte">
+            <p class="section__texte">
+              Les projections auront lieu au Parc Monceau, à Paris.
+            </p>
+
+            <p class="section__texte">
+              Transports en commun :<br />
+              Métro - Ligne 2 - Station Monceau<br />
+              Bus - Ligne 30 - Arrêt Monceau
+            </p>
+          </div>
+
+          <p class="section-lieu__google-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8813263585675!2d2.3077211812809058!3d48.87953882850833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sen!2sfr!4v1698939321237!5m2!1sen!2sfr"
+              class="section-lieu__google-maps-iframe"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="titre-section">Tarif</h2>
+
+        <p class="section__texte">
+          La participation au festival est gratuite. Une inscription est
+          souhaitée pour faciliter l’organisation.
+        </p>
+
+        <p class="section__texte">
+          <a href="inscription.html" class="cta">Inscription gratuite</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item footer__nav-item--active"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

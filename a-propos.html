@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/a-propos.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a
+          href="a-propos.html"
+          class="app-bar__nav-item app-bar__nav-item--active"
+          title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <h1 class="titre-page">À propos</h1>
+
+    <section class="section">
+      <h2 class="titre-section">L'association</h2>
+
+      <p class="section__texte">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Egestas congue
+        quisque egestas diam in arcu. Ultrices neque ornare aenean euismod
+        elementum nisi. Commodo sed egestas egestas fringilla phasellus
+        faucibus. Curabitur vitae nunc sed velit dignissim sodales ut.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="titre-section">Le festival</h2>
+
+      <p class="section__texte">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Egestas congue
+        quisque egestas diam in arcu. Ultrices neque ornare aenean euismod
+        elementum nisi. Commodo sed egestas egestas fringilla phasellus
+        faucibus. Curabitur vitae nunc sed velit dignissim sodales ut.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+      <div class="cta-banner__text">
+        Venez découvrir des classiques du cinéma d'auteur, c'est gratuit !
+      </div>
+      <a class="cta cta-banner__button" href="#">Inscription gratuite</a>
+    </div>
+
+    <section class="section section-contact">
+      <h2 class="titre-section">Contact</h2>
+
+      <p class="section__texte">
+        Pour nous contacter, vous pouvez écrire à :
+        <a href="mailto:contact@lesfilmsdepleinair.org"
+          ><span class="section-contact__lien-mail"
+            >contact@lesfilmsdepleinair.org</span
+          ></a
+        >
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a
+          href="a-propos.html"
+          class="footer__nav-item footer__nav-item--active"
+          title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

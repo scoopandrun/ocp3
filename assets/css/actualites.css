@@ -1,0 +1,75 @@
+@import url("base.css");
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 67%;
+}
+
+.article__image {
+  width: 100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+}
+
+.article__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.article__titre {
+  font: var(--body-highlight-font);
+  text-align: center;
+}
+
+.article__date {
+  font-weight: 300;
+}
+
+.article__texte {
+  display: none;
+}
+
+.article__bouton {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .articles {
+    gap: 4rem;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 1.5rem;
+  }
+
+  .article__infos {
+    align-items: flex-start;
+  }
+
+  .article__titre {
+    text-align: start;
+  }
+
+  .article__texte {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

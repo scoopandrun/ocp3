@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les films de plein air</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="app-bar__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Carousel -->
+      <section class="carousel">
+        <ol class="carousel__viewport">
+          <li class="carousel__slide" id="carousel__slide-1">
+            <div
+              class="carousel__image"
+              style="
+                background-image: url('/assets/images/film_la_gueule_ouverte_1974.jpg');
+              "
+            ></div>
+            <div class="carousel__nav">
+              <a
+                href="#carousel__slide-3"
+                class="carousel__prev"
+                title="Diapositive précédente"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--prev"
+                  alt="&lt;"
+                />
+              </a>
+              <a
+                href="#carousel__slide-2"
+                class="carousel__next"
+                title="Diapositive suivante"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--next"
+                  alt="&gt;"
+                />
+              </a>
+            </div>
+            <div class="carousel__overlay">
+              <div class="carousel__infos">
+                <div class="carousel__title">
+                  <a href="fiche-film.html" class="carousel__title"
+                    >La gueule ouverte</a
+                  >
+                </div>
+                <div class="carousel__date">5 octobre</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="carousel__slide" id="carousel__slide-2">
+            <div
+              class="carousel__image"
+              style="
+                background-image: url('./assets/images/film_le_gamin_au_velo_2011.jpg');
+              "
+            ></div>
+            <div class="carousel__nav">
+              <a
+                href="#carousel__slide-1"
+                class="carousel__prev"
+                title="Diapositive précédente"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--prev"
+                  alt="&lt;"
+                />
+              </a>
+              <a
+                href="#carousel__slide-3"
+                class="carousel__next"
+                title="Diapositive suivante"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--next"
+                  alt="&gt;"
+                />
+              </a>
+            </div>
+            <div class="carousel__overlay">
+              <div class="carousel__infos">
+                <div class="carousel__title">
+                  <a href="fiche-film.html" class="carousel__title"
+                    >Le gamin au vélo</a
+                  >
+                </div>
+                <div class="carousel__date">5 octobre</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="carousel__slide" id="carousel__slide-3">
+            <div
+              class="carousel__image"
+              style="
+                background-image: url('./assets/images/film_vicky_cristina_barcelona_2008.jpg');
+              "
+            ></div>
+            <div class="carousel__nav">
+              <a
+                href="#carousel__slide-2"
+                class="carousel__prev"
+                title="Diapositive précédente"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--prev"
+                  alt="&lt;"
+                />
+              </a>
+              <a
+                href="#carousel__slide-1"
+                class="carousel__next"
+                title="Diapositive suivante"
+              >
+                <img
+                  src="/assets/images/carousel-arrow.svg"
+                  class="carousel__arrow carousel__arrow--next"
+                  alt="&gt;"
+                />
+              </a>
+            </div>
+            <div class="carousel__overlay">
+              <div class="carousel__infos">
+                <div class="carousel__title">
+                  <a href="fiche-film.html" class="carousel__title"
+                    >Vicky Cristina Barcelona</a
+                  >
+                </div>
+                <div class="carousel__date">5 octobre</div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <div class="promesse">
+        <h1 class="promesse__h1">Festival de films d'auteur</h1>
+        Paris, Parc Monceau<br />
+        Du 5 au 8 août
+      </div>
+
+      <div class="lien-seances">
+        <a
+          href="liste-seances.html"
+          class="lien-seances__lien"
+          title="Consulter la liste des séances"
+          >Voir toutes les séances</a
+        >
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-banner">
+        <div class="cta-banner__text">
+          Venez découvrir des classiques du cinéma d'auteur, c'est gratuit !
+        </div>
+        <a class="cta cta-banner__button" href="inscription.html"
+          >Inscription gratuite</a
+        >
+      </div>
+
+      <section class="dernieres-nouvelles">
+        <h2 class="dernieres-nouvelles__titre titre-section">
+          Dernières nouvelles
+        </h2>
+
+        <div class="articles">
+          <article class="article">
+            <img
+              src="./assets/images/article_pelouse_1.jpg"
+              class="article__image"
+              alt="Photo de gens sur une pelouse"
+            />
+            <p class="article__texte">Lorem ipsum dolor sit amet.</p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </article>
+
+          <article class="article">
+            <img
+              src="./assets/images/article_woody_allen.jpg"
+              class="article__image"
+              alt="Photo de Woody Allen"
+            />
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </article>
+
+          <article class="article article--big">
+            <img
+              src="./assets/images/article_ecran_plein_air.jpg"
+              class="article__image"
+              alt="Photo de gens sur une pelouse devant un écran de cinéma"
+            />
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat!
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </article>
+
+          <article class="article">
+            <img
+              src="./assets/images/article_pelouse_2.jpg"
+              class="article__image"
+              alt="Photo de gens sur une pelouse"
+            />
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </article>
+
+          <article class="article">
+            <img
+              src="./assets/images/article_cannes.jpg"
+              class="article__image"
+              alt="Logo du festival de Cannes"
+            />
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a
+          href="/"
+          class="footer__nav-item footer__nav-item--active"
+          title="Accueil"
+          >Accueil</a
+        >
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a href="actualites.html" class="footer__nav-item" title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

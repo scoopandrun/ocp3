@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualités</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./assets/css/actualites.css" />
+  </head>
+  <body>
+    <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
+    <header class="app-bar">
+      <a href="/" title="Accueil">
+        <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
+      </a>
+
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+        >
+          <rect
+            y="24.8889"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            y="12.4445"
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+          <rect
+            width="32"
+            height="5.33333"
+            fill="var(--gold-metallic, #DEB841)"
+          />
+        </svg>
+      </label>
+
+      <nav class="app-bar__nav" role="navigation">
+        <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="app-bar__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="app-bar__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a
+          href="actualites.html"
+          class="app-bar__nav-item app-bar__nav-item--active"
+          title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="app-bar__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="titre-page">Actualités</h1>
+
+      <div class="articles">
+        <article class="article">
+          <div class="article__image-container">
+            <img
+              src="./assets/images/article_pelouse_1.jpg"
+              class="article__image"
+              alt="Photo de gens sur une pelouse"
+            />
+          </div>
+          <div class="article__infos">
+            <h2 class="article__titre">Lorem ipsum dolor sit amet.</h2>
+            <p class="article__date">3 août 2023</p>
+            <p class="article__texte">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </div>
+        </article>
+
+        <article class="article">
+          <img
+            src="./assets/images/article_woody_allen.jpg"
+            class="article__image"
+            alt="Photo de Woody Allen"
+          />
+          <div class="article__infos">
+            <h2 class="article__titre">Lorem ipsum dolor sit amet.</h2>
+            <p class="article__date">3 août 2023</p>
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              eum ratione amet. Nesciunt eum at ut sapiente dolore temporibus
+              perspiciatis. Rem quis tenetur, quisquam illo sapiente quia non
+              minus reprehenderit praesentium. Corrupti ea perspiciatis
+              doloribus voluptates dolor. Illum deleniti dolores, quos porro,
+              vel molestiae itaque mollitia natus a minima quia est ab iste
+              temporibus repellendus saepe magni architecto magnam nisi!
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </div>
+        </article>
+
+        <article class="article">
+          <img
+            src="./assets/images/article_ecran_plein_air.jpg"
+            class="article__image"
+            alt="Photo de gens sur une pelouse devant un écran de cinéma"
+          />
+          <div class="article__infos">
+            <h2 class="article__titre">Lorem ipsum dolor sit amet.</h2>
+            <p class="article__date">3 août 2023</p>
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat!
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </div>
+        </article>
+
+        <article class="article">
+          <img
+            src="./assets/images/article_pelouse_2.jpg"
+            class="article__image"
+            alt="Photo de gens sur une pelouse"
+          />
+          <div class="article__infos">
+            <h2 class="article__titre">Lorem ipsum dolor sit amet.</h2>
+            <p class="article__date">3 août 2023</p>
+            <p class="article__texte">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              placeat temporibus dolorum?
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </div>
+        </article>
+
+        <article class="article">
+          <img
+            src="./assets/images/article_cannes.jpg"
+            class="article__image"
+            alt="Logo du festival de Cannes"
+          />
+          <div class="article__infos">
+            <h2 class="article__titre">Lorem ipsum dolor sit amet.</h2>
+            <p class="article__date">3 août 2023</p>
+            <p class="article__texte">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem.
+            </p>
+            <a href="./article.html" class="button article__bouton"
+              >Lire plus</a
+            >
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <span class="pagination__link pagination__link--active">1</span>
+        <a href="#" class="pagination__link" title="Page 2">2</a>
+        <a href="#" class="pagination__link" title="Page 3">3</a>
+        <a href="#" class="pagination__link" title="Page 4">4</a>
+        <a href="#" class="pagination__link" title="Page suivante">Suivant</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="/" class="footer__nav-item" title="Accueil">Accueil</a>
+        <a href="a-propos.html" class="footer__nav-item" title="À propos"
+          >À propos</a
+        >
+        <a
+          href="infos-pratiques.html"
+          class="footer__nav-item"
+          title="Infos pratiques"
+          >Infos pratiques</a
+        >
+        <a
+          href="liste-seances.html"
+          class="footer__nav-item"
+          title="Liste des séances"
+          >Liste des séances</a
+        >
+        <a
+          href="actualites.html"
+          class="footer__nav-item footer__nav-item--active"
+          title="Actualités"
+          >Actualités</a
+        >
+        <a href="inscription.html" class="footer__nav-item" title="S'inscrire"
+          >S'inscrire</a
+        >
+      </nav>
+
+      <div class="footer__sub">
+        <div class="footer__copyright">© Les films de plein air</div>
+        <div class="footer__icons">
+          <a href="#" title="Instagram"
+            ><img src="/assets/images/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img src="/assets/images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" title="Google Maps"
+            ><img src="/assets/images/maps-and-flags.svg" alt="Maps"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
