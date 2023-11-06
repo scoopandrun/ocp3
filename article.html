@@ -13,12 +13,18 @@
   </head>
   <body>
     <!-- App bar -->
+    <input
+      type="checkbox"
+      id="app-bar-menu-checkbox"
+      class="app-bar__menu-checkbox"
+      hidden
+    />
     <header class="app-bar">
       <a href="/" title="Accueil">
         <img src="./assets/images/logo.svg" class="app-bar__logo" alt="Logo" />
       </a>
 
-      <div class="app-bar__hamburger">
+      <label for="app-bar-menu-checkbox" class="app-bar__hamburger">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -44,9 +50,9 @@
             fill="var(--gold-metallic, #DEB841)"
           />
         </svg>
-      </div>
+      </label>
 
-      <nav class="app-bar__nav">
+      <nav class="app-bar__nav" role="navigation">
         <a href="a-propos.html" class="app-bar__nav-item" title="À propos"
           >À propos</a
         >
