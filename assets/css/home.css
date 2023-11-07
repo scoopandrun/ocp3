@@ -1,5 +1,9 @@
 @import "./base.css";
 
+html {
+  scroll-padding-top: var(--app-bar-height);
+}
+
 /* CAROUSEL */
 
 .carousel {
@@ -10,7 +14,7 @@
 .carousel__viewport {
   height: 100vw;
   max-height: 50vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -18,10 +22,13 @@
   scrollbar-color: transparent transparent;
 }
 
+.carousel__viewport::-webkit-scrollbar {
+  height: 0;
+}
+
 .carousel__slide {
   width: 100%;
   flex-shrink: 0;
-  margin-top: calc(-1 * var(--app-bar-height));
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -34,7 +41,6 @@
 .carousel__image {
   position: absolute;
   inset: 0;
-  top: var(--app-bar-height);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -46,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--app-bar-height) 1rem 0 1rem;
+  margin: 0 1rem;
 }
 
 .carousel__prev,
