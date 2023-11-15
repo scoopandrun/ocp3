@@ -15,6 +15,11 @@
   z-index: 1;
 }
 
+.app-bar img {
+  /* fallback "alt" */
+  color: white;
+}
+
 .app-bar__logo {
   width: 7rem;
   margin-left: 2rem;

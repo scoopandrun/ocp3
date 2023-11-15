@@ -6,6 +6,11 @@
   margin-top: 2rem;
 }
 
+.footer img {
+  /* fallback "alt" */
+  color: white;
+}
+
 .footer__nav {
   background-color: var(--honolulu-blue);
   display: grid;
