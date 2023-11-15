@@ -17,7 +17,8 @@
   width: 100%;
   aspect-ratio: 1;
   margin: 2rem;
-  background-color: rgb(229, 227, 223); /* fond iframe */
+  background: center / cover no-repeat url("../images/google_maps.jpg"); /* en attente du chargement iframe */
+  background-color: rgb(229, 227, 223); /* fallback - fond iframe */
 }
 
 .section-lieu__google-maps-iframe {
